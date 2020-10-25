@@ -1,0 +1,74 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h2 , h3{
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+
+#testimonial{
+    background-color: #f63854;
+    text-align: center;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.section-padding{
+    padding: 60px 0;
+}
+.img-thumb{
+    margin: 15px;
+    text-align: center;
+}
+.img-thumb img {
+    width: inherit !important;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+}
+
+h2 a{
+    color: #222;
+}
+h3 a{
+    color: #333;
+}
+.testimonial-item{
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+p{
+    color:#222
+}
+.star-icon span {
+    color: #f63854;
+}
+#testimonial .owl-theme .owl-dots .owl-dot span{
+    color: #fff;
+    background: #fff;
+    border: 2px solid #fff;
+}
+
+#testimonial .owl-theme .owl-dots .owl-dot:hover span,
+#testimonial .owl-theme .owl-dots .owl-dot.active span{
+     background-color: #f63854;
+}
+@media screen and (max-width: 1199.98px){
+    .container{
+        max-width: 100%;
+        padding: 0 60px;
+    }
+}
