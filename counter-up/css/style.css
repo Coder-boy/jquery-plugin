@@ -1,0 +1,31 @@
+.box {overflow: hidden;}
+
+.single-box {
+    float: left;
+    background: tomato;
+    padding: 30px 24px;
+    text-align: center;
+    width: 20%;
+    color: white;
+}
+
+.area {
+    margin: 100px auto;
+    width: 1000px;
+}
+
+.single-box span {
+    font-weight: bold;
+    display: block;
+    font-size: 30px;
+}
+
+.single-box span h4 {
+    font-size: 22px;
+}
+
+h4 {}
+
+.single-box h4 {
+    font-size: 22px;
+}
