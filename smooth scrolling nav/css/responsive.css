@@ -1,0 +1,95 @@
+@media ( max-width:768px){
+    .header-area {
+        
+        height: 100vh;
+        width: 100%;
+    
+    }    
+ 
+.logo{
+    width: 75%;
+    
+    padding-top: 100px
+}
+nav {
+    position: fixed;
+    width: 102%;
+    margin-left: -67px;
+    z-index: 999;
+}
+nav ul{
+    max-height: 0px;
+    background: #1d2e42e6;
+}
+nav.black ul{
+    background: #1d2e42e6;
+}
+.showing{
+    max-height: 24em;
+}
+nav ul li{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+}
+nav ul li:hover {
+    background: #ecc529;
+   color:#182233 ;
+}
+.menu-icon{
+    display: block;
+}
+
+}
+@media(max-width:576px){
+    .header-area {
+        
+        height: 100vh;
+        width: 100%;
+    
+    }    
+
+    .logo {
+        width: 100%;
+        
+        padding-top: 100px;
+    }
+    nav {
+        position: fixed;
+        width: 102%;
+        margin-left: -57px;
+        z-index: 999;
+
+    }
+    nav ul li:hover {
+        background: #ecc529;
+        color:#182233 ;
+       
+    }
+    .service-img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .team-item{
+        display: block;
+
+    }
+    .team-member{
+        width: 100%;
+    }
+    .footer-item{
+        display: block;
+    }
+    .location{
+        width: 100%;
+    }
+
+    .social-media{
+        width: 100%;
+
+    }
+    .about{
+        width: 100%;
+    }
+}

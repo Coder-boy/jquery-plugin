@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="title"><h1>Our Upcoming Course Will Start Soon!</h1></div>
+            <div id="getting-started"></div>
+           
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#getting-started').countdown('2021/01/01', function(event) {
+                // $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+
+                $(this).html(event.strftime('<div class="single-counter">%w <span>Weeks</span> </div><div class="single-counter">%D <span>Days</span> </div><div class="single-counter">%H: <span>Hours</span> </div><div class="single-counter">%M: <span>Minutes</span> </div><div class="single-counter">%S: <span>Seconds</span> </div>'));
+            });
+        })
+            
+    </script>
+</body>
+</html>

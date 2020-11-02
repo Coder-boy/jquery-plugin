@@ -1,0 +1,30 @@
+div#getting-started {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main {
+    width: 1000px;
+    margin: 100px auto;
+}
+.title h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.single-counter {
+    width: 19%;
+    background: tomato;
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    padding: 40px 0;
+    font-weight: bold;
+}
+
+.single-counter span {
+    font-size: 25px;
+    text-transform: capitalize;
+    display: block;
+    margin-top: 5px;
+}

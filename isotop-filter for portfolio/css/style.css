@@ -1,0 +1,134 @@
+*{
+    /* margin: 0 auto;
+    padding: 0; */
+}
+.portfolio-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0;
+    margin-top: 30px;
+}
+.portfolio-menu li{
+    padding: 10px 30px;
+    border: 1px solid #eeaaee;
+    cursor: pointer;
+}
+.portfolio-menu li.active{
+    background-color: tomato;
+    color: #fff;
+    border: 0;
+}
+.portfolio-menu li.active a{
+    
+    color: #fff;
+    
+}
+
+
+
+
+
+.portfolio-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+.single-portfolio img{
+    width:300px;
+   height: 200px;
+}
+.single-portfolio {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: #fff;
+    
+    transition: .3s;
+}
+
+.portfolio-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 300px;
+    height: 200px;
+    background-color: #0606068c;
+    opacity: .7;
+    z-index: -1;
+}
+
+.portfolio-overlay h4 {
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+}
+.single-portfolio:hover .portfolio-overlay {
+    top: 100%;
+    
+    
+}
+.box {
+    width: 300px;
+    height: 200px;
+    background: black;
+    transition: 10s ease-in-out;
+    background-position: top;
+    position: relative;
+}
+.box.box-1{
+    background: url(../work1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box.box-2{
+    background: url(../work2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box.box-3{
+    background: url(../work3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box.box-4{
+    background: url(../work4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box.box-5{
+    background: url(../work5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box.box-6{
+    background: url(../work6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.box:hover{
+    background-position: bottom;
+}

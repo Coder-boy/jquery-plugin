@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 500px;
+        margin: 100px auto;
+        text-align: center;
+    }
+    .preloader img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #777;
+    z-index: 9;
+}
+
+.preloader ul {
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    transform: translate(50%, -50%);
+}
+
+.preloader ul li {
+    width: 3px;
+    height: 35px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    animation: animate 1s infinite;
+}
+@keyframes animate {
+    0%{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    75%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaley(2);
+    }
+}
+.preloader ul li:nth-child(1){
+    animation-delay: .1s;
+}
+.preloader ul li:nth-child(2){
+    animation-delay: .2s;
+}
+.preloader ul li:nth-child(3){
+    animation-delay: .3s;
+}
+.preloader ul li:nth-child(4){
+    animation-delay: .4s;
+}
+.preloader ul li:nth-child(5){
+    animation-delay: .5s;
+}
+
+</style>
+<body>
+    <div class="preloader">
+        <img src="loader.gif" alt="">
+        <!-- <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul> -->
+    </div>
+    <div class="container">
+        <h1>Preloader</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem ducimus deserunt illo et incidunt inventore suscipit vitae, dignissimos quibusdam possimus commodi a perferendis modi debitis? Veritatis cumque at nisi ipsum explicabo assumenda? Aspernatur voluptatum quidem magnam veniam totam voluptate voluptatibus architecto debitis aperiam possimus laudantium soluta tempore in obcaecati vel, doloremque repellendus deleniti distinctio eum ea repudiandae accusantium. Nam vel nemo enim consequuntur recusandae blanditiis impedit quas. Tenetur, et culpa! Distinctio amet, nemo laborum modi est atque officia soluta dolores ea? Consequatur, veritatis et enim cumque a ut aspernatur ex laboriosam est sequi atque quibusdam eveniet eligendi pariatur voluptate.</p>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(window).on("load" , function () {
+            $(".preloader").fadeOut()
+        })
+    </script>
+</body>
+</html>

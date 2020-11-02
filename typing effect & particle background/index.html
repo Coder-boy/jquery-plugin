@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap-full">
+        <div class="contentBox">
+            <h1>Ashraf Ahmed <br> <span class="element"> </span></h1>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jparticle.jquery.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+        strings: ['Web Designer', 'Web Developer', 'Graphic Designer'],
+        smartBackspace: true,
+        typeSpeed: 140,
+        backSpeed: 140,
+        loop:true,
+        startDelay: 30,
+        
+
+        });
+
+
+        $("body").jParticle({
+            background:'linear-gradient(70deg, #020202, #000000bf) ,url(img.jpg)',
+            color: 'white',
+            particlesNumber: 70,
+            createLinkDist: 150,
+           
+            
+
+
+        });
+
+    </script>
+</body>
+</html>

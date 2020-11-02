@@ -1,0 +1,19 @@
+.container{
+    width: 1170px;
+   
+}
+.box{
+    margin: auto;
+    width: 950px;
+}
+.img-box{
+    float: left;
+    
+    margin:100px 5px ;
+}
+.img-box img{
+        width: 300px;
+    }
+    img{
+        width: 100%;
+    }
